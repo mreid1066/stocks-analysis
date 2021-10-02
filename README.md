@@ -23,7 +23,9 @@ The first objective that Steve wanted us to do, was to come up with code so that
 
 By using this code, we could run different years by using the same subroutine. It can be seen that most of the stocks in 2017 outperfored the stocks the following year. The only stock that grew by a significant amount in both years was ENPH. 
 
-Images placeholder
+![2017_Table](resources/VBA_Challenge_2017_Table.png)
+
+![2018_Table](resources/VBA_Challenge_2018_Table.png)
 
 Steve and his parents may want to go over more stocks and add more years to the data set so we can get a broader picture of what is going on with the market.
 
@@ -47,7 +49,9 @@ From an efficacy and processing speed perspective, the refactored code greatly o
 
      End If
 
-Images Placeholder
+![2017_pop_up](resources/VBA_Challenge_2017.png)
+
+![2018_pop_up](resources/VBA_Challenge_2018.png)
 
 ## Summary
 
