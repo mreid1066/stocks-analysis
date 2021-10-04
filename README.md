@@ -8,10 +8,10 @@ This project's goal was to take the VBA code that was satisfactory for a small a
 ## Method and Challenges
 
 ### Method Used to Achieve Goals
-We used a portion of the existing code as a skeleton for the refactoring. We then thought about how we could make the script run faster. Using the hints and guides, we were able to understand that the simplest way would be to eliminate one of the for statements in the nested for statements. This would make decrease the amount of steps for each loop. We did this by creating a variable for the index and created arrays for the outputs that would reference index variable. Simply put, when the for loop was ran, it gathered the outputs for each ticker so that we only had to run through all the rows once instead of 12 times like our original code.
+We used a portion of the existing code as a skeleton for the refactoring. We then thought about how we could make the script run faster. Using the hints and guides, we were able to understand that the simplest way would be to eliminate one of the "for" statements in the nested "for" statements. This would decrease the amount of steps for each loop. We did this by creating a variable for the index and created arrays for the outputs that would reference index variable. Simply put, when the for loop was ran, it gathered the outputs for each ticker so that we only had to run through all the rows once instead of 12 times like our original code.
 
 ### Challenges and Difficulties Encountered
-It took us a few frustrated hours and a night of sleep before we were able to get on the right path. Originally, we tried using the "tickerIndex" variable for only the ticker. We were esentially just reinventing the wheel instead of ataching an engine to it. After clearing our code and starting over, looking at the ticker and output arrays as a matrix, it was a lot easier to piece the solution together and make a lot more sense of how to manipulate the code to achieve the goal. 
+It took us a few frustrated hours and a night of sleep before we were able to get on the right path. Originally, we tried using the "tickerIndex" variable for only the ticker. We were esentially just reinventing the wheel instead of ataching an engine to it. After clearing our code and starting over, looking at the ticker and output arrays as a matrix, it was a lot easier to piece ogether the solution and made a lot more sense of how to manipulate the code to achieve the goal. 
 
 ## Results
 
@@ -31,7 +31,7 @@ Steve and his parents may want to go over more stocks and add more years to the 
 
 ### Compare Original Script with Refactored Script
 
-From an efficacy and processing speed perspective, the refactored code greatly outperformed the orginal by an almost 6 to 1 margin. The refactored script took less than a fifth of a second on average to complete where as the original script ran in just above four-fifths of a second on average. As stated above, this occured by eliminating a for statement and creating an index variable, making it so that it didnt have to run the same script twelve times.
+From an efficiency and processing speed perspective, the refactored code greatly outperformed the orginal by an almost 6 to 1 margin. The refactored script took less than a fifth of a second on average to complete where as the original script ran in just above four-fifths of a second on average. As stated above, this occured by eliminating a for statement and creating an index variable, making it so that it didnt have to run the same script twelve times.
 
     Dim tickerIndex As Integer
     tickerIndex = 0
@@ -56,7 +56,7 @@ From an efficacy and processing speed perspective, the refactored code greatly o
 ## Summary
 
 ### What are the advantages or disadvantages of refactoring?
-Refactoring your code can increase the efficiency and speed of your script by augmentation, reducing the ammount of unnecessary code and automation. But in doing this, we run the risk of over engineering our code or corrupting our original code. Refactoring code also takes time and could be more exhaustive than the time and effort that efficiency yeilds.
+Refactoring your code can increase the efficiency and speed of your script by augmentation, reducing the ammount of unnecessary code and automation. But in doing this, we run the risk of over-engineering our code or corrupting the original code. Refactoring code also takes time and could be more exhaustive than the time and effort the efficiency yeilds.
 
 ### How do these pros and cons apply to refactoring the original VBA script?
-With this script in particular, there was a lot of time spent and energy spent for three-fifths a second saved per run. However, if Steve does infact use this code to run on a larger data sets that includes thousands of tickers and possibly several more years woth of data, then the efficiency could be useful in saving time and processing power needed to run the script.
+With this script in particular, there was a lot of time spent and energy spent for three-fifths a second saved per run. However, if Steve does infact use this code to run on a larger data sets that includes thousands of tickers and possibly several more years worth of data, then the refactoring could be useful in saving time and processing power needed to run the script.
